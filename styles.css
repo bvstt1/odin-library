@@ -1,0 +1,135 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('font/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+#container{
+    display: grid;
+    grid-template-rows: 1fr 2fr 0.3fr;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0px;
+    background-color: #C4DFDF;
+    font-size: 2em;
+}
+
+header h2{
+    align-content: center;
+}
+
+header button{
+    background-color: #F8F6F4;
+    border: #F8F6F4;
+    font-size: 1em;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+dialog {
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    padding: 2rem;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    
+    background-color: white;
+    z-index: 1000;
+}
+
+input{
+    padding: 0.5rem;
+    font-size: 1.2em;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container-label{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.container-label input{
+    background-color: #F8F6F4;
+    border: 1px solid gray;
+    border-radius: 5px;
+    height: 20px;
+}
+
+#container-label-pag{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+#container-label-pag input{
+    background-color: #F8F6F4;
+    border: 1px solid gray;
+    border-radius: 5px;
+    height: 20px;
+}
+
+#pag{
+    width: 100px;
+}
+
+#modal-button{
+    display: flex;
+    gap: 10px;
+}
+
+
+#add-book{
+    border: #8affff;
+    background-color: #8affff;
+    width: 100px;
+    height: 40px;
+    font-size: 1em;
+}
+
+#reset{
+    border: #C4DFDF;
+    background-color: #C4DFDF;
+    width: 100px;
+    height: 40px;
+    font-size: 1em;
+
+}
+
+#modal-button a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ff4d4d;
+    width: 100px;
+    height: 40px;
+    font-size: 1em; 
+    color: black;
+    text-decoration: none;
+}
+  
+#read{
+    margin-left: 10px;
+}
